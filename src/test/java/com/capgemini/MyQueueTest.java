@@ -10,6 +10,8 @@ public class MyQueueTest {
 		queue.enqueue(myThirdNode);
 		queue.enqueue(mySecondNode);
 		queue.enqueue(myFirstNode);
+		INode node = queue.dequeue();
 		queue.displayQueue();
+		Assert.assertEquals(mySecondNode, node);
 	}
 }
