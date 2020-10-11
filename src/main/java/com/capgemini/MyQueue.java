@@ -8,6 +8,9 @@ public class MyQueue {
 	public void enqueue(INode myNode) {
 		myLinkedList.append(myNode);
 	}
+	public INode dequeue() {
+		return myLinkedList.popLast();
+	}
 	public void displayQueue() {
 		myLinkedList.printMyNodes();
 	}
